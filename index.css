@@ -182,15 +182,25 @@ body{
 /* Events Editing */
 
 .event-container{
-    background-image: url("public/images/event.png");
+    position: relative;
     min-height: 720px;
+    background-image: url("public/images/event.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.sample 
-{
-    padding: 10rem;
+#event{
+    position:relative;
+    overflow: hidden;
+}
+.event-carousel{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.263);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white; 
+    z-index: 2;
+    text-align: center;
 }
