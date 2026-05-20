@@ -15,9 +15,11 @@ function filterMenu(categoryId,aId){
     console.log(menus);
     menus.forEach(menu=>{
         menu.style.backgroundColor='transparent';
+        menu.style.color='#551212'
         if(menu.id==aId)
         {
             menu.style.backgroundColor='#800000';
+            menu.style.color='#f8d5d5'
         }
     });
 }

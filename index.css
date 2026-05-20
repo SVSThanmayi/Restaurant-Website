@@ -167,18 +167,53 @@ body{
     margin-top: 2rem;
     background-color: white;
     border-radius: 15px;
-    padding: 1rem;
+    padding: 2rem;
     box-shadow:0 10px 8px rgba(0,0,0,0.2);
-    white-space: pre;
-}
-.menu-item{
-    flex:1 1 45%;
-    min-width: 150px;
-    padding:1rem;
-    color: rgb(177, 82, 97);
-    font-size: large;
 }
 
+.items-locate a{
+    cursor: pointer;
+}
+
+.menu-item{
+    display: flex;
+    flex:1 1 45%;
+    min-width: 150px;
+    color: rgb(177, 82, 97);
+    font-size: large;
+    white-space:pre;
+}
+.menu-item span,.sig-item span{
+    padding: 1rem;
+    margin-top: 5px;
+}
+.menu-icon{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.signature h4{
+    margin:2rem 0rem;
+    color: rgb(172, 1, 66);
+}
+
+.sig-item{
+    color: rgb(208, 80, 118);
+    padding-bottom:2rem;
+    margin-bottom: 0;
+    font-size: 18px;
+    margin-left: 1rem;
+}
+
+.dishes{
+    margin-top: 0.2rem;   /* reduce space */
+    padding-top: 0;
+    margin-right: 4rem;
+    line-height: 1.3;
+    color: rgb(238, 135, 171);
+}
 /* Events Editing */
 
 .event-container{
@@ -203,12 +238,38 @@ body{
     z-index: 2;
     text-align: center;
 }
+
 .event-slides-container{
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.303);
     backdrop-filter: blur(2px);
     border-radius: 20px;
     padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.248);
+    max-width: 700rem;
+    max-height: 250rem;
+}
+.event-slide{
+    padding: 0rem 6rem;
+}
+.event-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
+.event-content img{
+    object-fit: cover;
+    max-width: 500px;
+    max-height: 350px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
 
+.event-text h6, p{
+    text-align:start;
+    width: 700px;
+}
+.event-types{
+    margin: 2rem;
+}
