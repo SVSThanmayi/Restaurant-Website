@@ -273,3 +273,25 @@ body{
 .event-types{
     margin: 2rem;
 }
+
+/* Gallery Styling */
+
+.gallery-body{
+    padding: 5rem;
+}
+
+.gallery-body h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #b40445;
+    text-align: center;
+    padding:2rem;
+    padding-bottom: 3rem;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
