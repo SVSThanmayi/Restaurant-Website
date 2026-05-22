@@ -1,7 +1,7 @@
 @import url("./public/fonts/fonts.css");
 
 body{
-    background-color: rgb(251, 227, 227);
+    background-color: rgb(255, 255, 255);
 }
 /* Slide Bar */
 #imageRefer
@@ -19,13 +19,22 @@ body{
     gap:3rem;
     position: fixed;  
     top:0;
-    width: 100%;
+    width:100%;
     z-index: 1000;     
     background: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
 }
 
 .contact-no,.weekdays-time,.weekends-time{
     color: rgb(233, 177, 196);
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.contact-no p,.weekdays-time p,.weekends-time p{
+    color: rgb(228, 228, 228);
+    font-size: 15px;
+    width:100%;
+    padding-top: 0.1rem;
 }
 
 #contact div{
@@ -64,7 +73,7 @@ body{
 }
 
 .nav-brand{
-    font-family:'Nicholas';
+    font-family:'Nicholas',cursive;
     padding-left: 1rem;
     text-decoration: none;
     font-size:xx-large;
@@ -132,13 +141,18 @@ body{
 
 /* Menu heading */
 
+#menu{
+    background: linear-gradient(to bottom, rgb(251, 227, 227), rgb(255, 255, 255))
+}
+
 .menu-heading{
     text-align: center;
 }
 
 .menu-heading h1{
     color: rgba(71, 6, 20, 0.793);
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Brisket',cursive;
+    font-size:50px;
 }
 .menu-heading h5{
     color: rgba(119, 52, 66, 0.625);
@@ -277,21 +291,250 @@ body{
 /* Gallery Styling */
 
 .gallery-body{
-    padding: 5rem;
+    padding: 5rem 3rem;
 }
 
 .gallery-body h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Candale',cursive;
     color: #b40445;
     text-align: center;
-    padding:2rem;
+    padding:1rem;
     padding-bottom: 3rem;
+    font-size: 55px;
 }
 .top{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 .bottom{
     display: flex;
     flex-direction: row;
+}
+.pics{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.pics img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-bottom-right-radius: 30%;
+    border-start-start-radius:30% ;
+    border-style:groove;
+    border-width: 3px;
+    border-color: #9a0039;
+}
+
+/* Members Image */
+
+.members{
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background */
+.background{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay */
+.members-carousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+}
+
+.members-carousel-slide{
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.members-carousel-slide img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 30%;
+    border: 3px solid white;
+}
+
+.Member-name{
+    text-align: center;
+}
+.members-carousel-slide h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.members-carousel-slide p{
+    color: rgb(228, 228, 228);
+    font-size: 15px;
+    font-family: cursive;
+    width: auto;
+    margin: 0;
+}
+
+.member-quote p{
+    color: white;
+    font-family:cursive;
+    font-style: italic;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+}
+
+.contact-box h1{
+    font-family:'Candale',serif;
+    font-size: 50px;
+    color: #7b002d;
+}
+.contact-box h6{
+    padding:1rem;
+    color: #9d6f80;
+}
+.contact-box img{
+    width: 80%;
+}
+
+.all-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 4rem;
+    box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.2);
+}
+.location{
+    width: 350px;
+    height: 200px;
+    padding: 1rem;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding-left: 2rem;
+    margin-right: 2rem;
+}
+.loca-icon{
+    width: 45px;
+    height: 45px;
+    background-color: #ffe4ee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.loca-icon i{
+    font-size: 22px;
+    color: #b40445;
+}
+.loca-text{
+    padding-top: 1rem;
+    font-size: 15px;
+}
+
+.timings{
+    width: 300px;
+    height: 200px;
+    padding: 1rem;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding-right: 0rem;
+}
+.time-icon{
+    width: 45px;
+    height: 45px;
+    background-color: #ffe4ee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.time-icon i{
+    font-size: 22px;
+    color: #b40445;
+}
+.time-text{
+    font-size: 15px;
+    padding-top: 1rem;
+}
+
+.e-mail{
+    width: 300px;
+    height: 200px;
+    padding: 1rem;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding-right: 0rem;
+}
+.e-mail-icon{
+    width: 45px;
+    height: 45px;
+    background-color: #ffe4ee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.e-mail-icon i{
+    font-size: 22px;
+    color: #b40445;
+}
+.e-mail-text{
+    font-size: 15px;
+    padding-top: 1rem;
+}
+
+.cell{
+    width: 300px;
+    height: 200px;
+    padding: 1rem;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding-right: 0rem;
+}
+.cell-icon{
+    width: 45px;
+    height: 45px;
+    background-color: #ffe4ee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.cell-icon i{
+    font-size: 22px;
+    color: #b40445;
+}
+.cell-text{
+    font-size: 15px;
+    padding-top: 1rem;
 }

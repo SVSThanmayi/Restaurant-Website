@@ -3,3 +3,11 @@
     font-family: 'Nicholas';
     src: url('./Nicholas.ttf') format('truetype');
 }
+@font-face {
+  font-family:'Candale';
+  src: url(./candale/CandaleDemo-Regular.otf) format('opentype'); 
+}
+@font-face {
+  font-family:'Brisket';
+  src: url(./brisket_script/BrisketScript_PERSONAL_USE_ONLY.otf) format('opentype'); 
+}
