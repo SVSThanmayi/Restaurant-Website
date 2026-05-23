@@ -142,7 +142,7 @@ body{
 /* Menu heading */
 
 #menu{
-    background: linear-gradient(to bottom, rgb(251, 227, 227), rgb(255, 255, 255))
+    background: linear-gradient(to bottom, rgb(251, 227, 227), rgb(255, 255, 255));
 }
 
 .menu-heading{
@@ -288,9 +288,61 @@ body{
     margin: 2rem;
 }
 
+/* Booking */
+
+#Book-Table{
+    background: linear-gradient(to bottom, rgb(255, 255, 255), #fef1f6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+#Book-Table h1{
+    font-family:'Brisket',cursive;
+    color: #f21365;
+    padding: 2rem;
+    font-size:40px;
+}
+#booking-box{
+    width:100%;
+    background-color:white;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.2);
+}
+.customer-details input{
+    width: 450px;
+    padding: 5px;
+    margin:0.5rem;
+}
+.booking-time input{
+    width: 450px;
+    padding: 5px;
+    margin:0.5rem;
+}
+.booking{
+    margin: 0.5rem;
+}
+.booking textarea{
+    width:1390px;
+    height: 150px;
+}
+#booking-box button{
+    background-color: #9a0039;
+    width: 70px;
+    border-radius: 20px;
+    height:40px;
+    color: #feb9d1;
+}
+
 /* Gallery Styling */
 
 .gallery-body{
+    background: linear-gradient(to bottom, #fef1f6, #f8d5e2);
     padding: 5rem 3rem;
 }
 
@@ -364,8 +416,8 @@ body{
 }
 
 .members-carousel-slide img{
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 30%;
     border: 3px solid white;
@@ -395,6 +447,11 @@ body{
     padding: 1rem;
 }
 
+/* contact */
+
+#contact-details{
+    background: linear-gradient(to bottom, #fbd4e2,rgb(255, 255, 255));
+}
 .contact-box{
     display: flex;
     flex-direction: column;
@@ -424,7 +481,8 @@ body{
     justify-content: center;
     overflow: hidden;
     margin-top: 4rem;
-    box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.2);
+    background-color: white;
 }
 .location{
     width: 350px;
@@ -434,7 +492,8 @@ body{
     gap: 10px;
     align-items: flex-start;
     padding-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.2);
 }
 .loca-icon{
     width: 45px;
@@ -491,6 +550,7 @@ body{
     gap: 10px;
     align-items: flex-start;
     padding-right: 0rem;
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.2);
 }
 .e-mail-icon{
     width: 45px;
@@ -537,4 +597,43 @@ body{
 .cell-text{
     font-size: 15px;
     padding-top: 1rem;
+}
+
+#message{
+    padding: 2rem;
+    margin-top: 0.5rem;
+    box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+#sender-name{
+    width:47%;
+    height: 40px;
+    padding:1rem;
+    margin:1rem;
+}
+#sender-email{
+    width:47%;
+    height: 40px;
+    padding:1rem;
+    margin:1rem;
+}
+#message-subject{
+    width:97%;
+    height: 40px;
+    padding: 1rem;
+}
+#message-content{
+    width:97%;
+    margin:1rem;
+    height:200px;
+    padding:1rem;
+    resize:none;
+}
+#message-sent{
+    background-color: #b91652;
+    height:40px;
+    width:150px;
+    border-radius:25px;
+    color:#feb9d1;
+    border-width: 0rem;
 }

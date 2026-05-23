@@ -23,4 +23,3 @@ function filterMenu(categoryId,aId){
         }
     });
 }
-

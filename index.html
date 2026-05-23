@@ -27,8 +27,9 @@
                     <p>Sat-Sun: 12:00a.m - 00:00pm</p>
                 </div>
             </div>
+        </div>
         <!-- Slide Bar -->
-        <div id="imageRefer" class="carousel slide">
+        <div id="imageRefer" class="carousel slide carousel-fade members-slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                 <img src="public/images/title.jpg" class="d-block w-100" alt="Restaurant Banner">
@@ -60,8 +61,8 @@
                     <a href="#menu" class="nav-menu">Menu</a>
                     <a href="#event" class="nav-events">Events</a>
                     <a href="#gallery" class="nav-gallery">Gallery</a>
-                    <a href="contact-details" class="nav-contact">Contact</a>
-                    <button> Book a table </button>
+                    <a href="#contact-details" class="nav-contact">Contact</a>
+                    <button onclick="location.href='#Book-Table'"> Book a table </button>
                 </div>
             </nav>
     </div>
@@ -469,7 +470,7 @@
     </section>
     <section id="event">
         <div class="event-container"></div>
-        <div id="eventCarouselRide" class="carousel carousel-fade event-carousel" data-bs-ride="carousel" ata-bs-interval="6000">
+        <div id="eventCarouselRide" class="carousel slide event-carousel" data-bs-ride="carousel" ata-bs-interval="6000">
             <div class="carousel-inner event-slides-container">
                 <div class="carousel-item active event-slide">
                     <h2>Sweet Celebrations</h2>
@@ -604,6 +605,26 @@
             </button>
         </div>
     </section>
+    <!-- Booking -->
+     <section id="Book-Table">
+        <h1>Book a Table</h1>
+        <form id="booking-box">
+            <div class="customer-details">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your email">
+                <input type="text" placeholder="Your Phone">                
+            </div>
+            <div class="booking-time">
+                <input type="date">
+                <input type="time">
+                <input type="number" placeholder="Number Of People">
+            </div>
+            <div class="booking">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <button type="button" onclick="document.getElementById('booking-box').reset()">Send</button>
+        </form>
+     </section>
     <!-- Gallery -->
     <section id="gallery">
         <div class="gallery-body">
@@ -642,7 +663,7 @@
     </section>
     <!-- Members -->
     <section id="Members">
-        <div id="membersCarousel" class="carousel carousel-fade members-slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="false">
+        <div id="membersCarousel" class="carousel  carousel-fade members-slide" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="false">
             <div class="members">
                 <img src="public/images/Memebers/ChatGPT Image May 22, 2026, 02_17_44 PM.png" class="background" alt="Background Image">
                 <div class="carousel-inner members-carousel">
@@ -690,48 +711,60 @@
             </div>
         </div>
     </section>
+    <!-- Contact Details -->
     <section id="contact-details">
         <div class="contact-box">
             <h1>Contact Us</h1>
             <h6>Our Location On Map</h6>
             <img src="public/images/Location.jpeg" alt="Location">
-            <div class="all-details">
-                <div class="location">
-                    <div class="loca-icon">
-                        <i class="bi bi-geo-alt"></i>
+            <div class="container-contact">
+                <div class="all-details">
+                    <div class="location">
+                        <div class="loca-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="loca-text">
+                            <p>B crafts</p>
+                            <p>Ocean Breeze Complex,Beach Road,</p>
+                            <p>Near Rushikonda Junction,Rushikonda,</p>
+                            <p>Visakhapatnam, AP 530045</p>
+                        </div>
                     </div>
-                    <div class="loca-text">
-                        <p>B crafts</p>
-                        <p>Ocean Breeze Complex, Beach Road,</p>
-                        <p>Near Rushikonda Junction, Rushikonda,</p>
-                        <p>Visakhapatnam, Andhra Pradesh 530045</p>
+                    <div class="timings">
+                        <div class="time-icon">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <div class="time-text">
+                            <p>Mon-Fri: 7:00a.m - 23:00p.m</p>
+                            <p>Sat-Sun: 12:00a.m - 00:00pm</p>
+                        </div>
+                    </div>
+                    <div class="e-mail">
+                        <div class="e-mail-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="e-mail-text">
+                            <p>bcrafts@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="cell-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <div class="cell-text">
+                            <p>+257 18 873 963</p>
+                        </div>
                     </div>
                 </div>
-                <div class="timings">
-                    <div class="time-icon">
-                        <i class="bi bi-clock"></i>
+                <form id="message">
+                    <div class="sender-info">
+                        <input id="sender-name" type="text" placeholder="Your Name">
+                        <input id="sender-email" type="text" placeholder="Your email">
                     </div>
-                    <div class="time-text">
-                        <p>Mon-Fri: 7:00a.m - 23:00p.m</p>
-                        <p>Sat-Sun: 12:00a.m - 00:00pm</p>
-                    </div>
-                </div>
-                <div class="e-mail">
-                    <div class="e-mail-icon">
-                        <i class="bi bi-envelope"></i>
-                    </div>
-                    <div class="e-mail-text">
-                        <p>bcrafts@gmail.com</p>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="cell-icon">
-                        <i class="bi bi-phone"></i>
-                    </div>
-                    <div class="cell-text">
-                        <p>+257 18 873 963</p>
-                    </div>
-                </div>
+                    <input id="message-subject" type="text" placeholder="Subject">
+                    <textarea id="message-content" placeholder="Message"></textarea>
+                    <button id="message-sent" type="button" onclick="document.getElementById('message').reset()">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
